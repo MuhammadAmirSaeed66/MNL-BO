@@ -106,13 +106,6 @@ All results in the manuscript can be reproduced using:
 source("scripts/run_experiments.R")
 ```
 
-Outputs will be saved in:
-
-```
-results/
-figures/
-```
-
 ---
 
 ## 📊 Results Visualization
