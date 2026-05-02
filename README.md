@@ -108,20 +108,6 @@ source("scripts/run_experiments.R")
 
 ---
 
-## 📊 Results Visualization
-
-<p align="center">
-  <img src="figures/convergence_plot.png" width="600">
-</p>
-
-<p align="center">
-  <img src="figures/performance_comparison.png" width="600">
-</p>
-
-> Figures are generated automatically from scripts.
-
----
-
 ## 📚 Citation
 
 If you use this code, please cite:
