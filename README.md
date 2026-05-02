@@ -13,19 +13,16 @@
     <img src="https://img.shields.io/badge/license-MIT-blue.svg">
   </a>
   <!-- TODO: Replace this Zenodo badge after creating a Zenodo DOI -->
-  <!-- <a href="https://zenodo.org/badge/latestdoi/XXXX">
-    <img src="https://zenodo.org/badge/XXXX.svg" alt="DOI">
-  </a> -->
 </p>
 
 ---
 
 ## 📄 Paper
 
-**Title:**  
+**Title:**
 *Bayesian Optimization for Categorical and Mixed Variables Using a Multinomial Logit Surrogate*
 
-**Journal:**  
+**Journal:**
 *Algorithms* — MDPI
 
 This repository contains the complete **R source code**, supporting data, scripts, and figures required to reproduce the computational experiments reported in the manuscript.
@@ -34,25 +31,23 @@ This repository contains the complete **R source code**, supporting data, script
 
 ## 🚀 Overview
 
-Bayesian Optimization (BO) is a widely used framework for optimizing expensive black-box functions. Traditional BO methods commonly rely on Gaussian process surrogates, which work well for continuous domains but may struggle with categorical and mixed-variable search spaces.
+Bayesian Optimization (BO) is widely used for optimizing expensive black-box functions. Traditional BO methods rely on Gaussian process surrogates, which perform well in continuous domains but encounter difficulties in categorical and mixed-variable settings.
 
-This repository implements **MNL-BO**, a preference-based Bayesian optimization framework that replaces the Gaussian process surrogate with a **Multinomial Logit (MNL)** model trained from pairwise preference comparisons.
-
-The proposed framework provides an interpretable surrogate model for categorical alternatives while allowing continuous, discrete, and categorical variables to be handled within a unified optimization workflow.
+This repository implements **MNL-BO**, a preference-based Bayesian optimization framework using a **Multinomial Logit (MNL)** surrogate trained from pairwise comparisons.
 
 ---
 
 ## ✨ Key Contributions
 
-- Preference-based Bayesian optimization using a Multinomial Logit surrogate
-- Natural handling of categorical and mixed-variable decision spaces
-- Pairwise comparison-based learning mechanism
-- Acquisition functions balancing exploration and exploitation
-- Reproducible experiments for:
-  - Purely categorical benchmark problem
-  - Combinatorial Traveling Salesman Problem
-  - Mixed-variable pressure vessel design optimization
-- Comparisons against random search, local search, classical metaheuristics, and SMAC-inspired tree-based BO baselines
+* Multinomial Logit surrogate for BO
+* Natural handling of categorical variables
+* Unified framework for mixed-variable optimization
+* Preference-based learning using pairwise comparisons
+* Evaluated on:
+
+  * Categorical benchmark
+  * Traveling Salesman Problem
+  * Pressure vessel design
 
 ---
 
@@ -68,22 +63,84 @@ MNL-BO/
 │── README.md
 │── LICENSE
 │── .gitignore
+```
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/MuhammadAmirSaeed66/MNL-BO.git
+cd MNL-BO
+```
+
+```r
+install.packages(c("tidyverse","data.table","mlogit","ggplot2"))
+```
+
+---
+
+## ▶️ Usage
+
+Run all experiments:
+
+```r
+source("scripts/run_experiments.R")
+```
+
+Run individual studies:
+
+```r
+source("scripts/categorical_case.R")
+source("scripts/tsp_case.R")
+source("scripts/pressure_vessel_case.R")
+```
+
+---
+
+## 🧪 Reproducibility
+
+All results in the manuscript can be reproduced using:
+
+```r
+source("scripts/run_experiments.R")
+```
+
+Outputs will be saved in:
+
+```
+results/
+figures/
+```
+
+---
+
+## 📊 Results Visualization
+
+<p align="center">
+  <img src="figures/convergence_plot.png" width="600">
+</p>
+
+<p align="center">
+  <img src="figures/performance_comparison.png" width="600">
+</p>
+
+> Figures are generated automatically from scripts.
+
+---
 
 ## 📚 Citation
 
-If you use this code or find this work useful, please cite:
+If you use this code, please cite:
 
 ```bibtex
 @article{saeed2026mnlbo,
   title   = {Bayesian Optimization for Categorical and Mixed Variables Using a Multinomial Logit Surrogate},
   author  = {Saeed, Muhammad Amir and others},
   journal = {Algorithms},
-  year    = {2026},
-  note    = {MDPI}
+  year    = {2026}
 }
 ```
-
-> The final citation information will be updated after publication.
 
 ---
 
@@ -102,8 +159,6 @@ If you use this code or find this work useful, please cite:
 ## 📜 License
 
 This repository is licensed under the MIT License.
-
-See the `LICENSE` file for details.
 
 ---
 
