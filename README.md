@@ -68,3 +68,47 @@ MNL-BO/
 │── README.md
 │── LICENSE
 │── .gitignore
+
+## 📚 Citation
+
+If you use this code or find this work useful, please cite:
+
+```bibtex
+@article{saeed2026mnlbo,
+  title   = {Bayesian Optimization for Categorical and Mixed Variables Using a Multinomial Logit Surrogate},
+  author  = {Saeed, Muhammad Amir and others},
+  journal = {Algorithms},
+  year    = {2026},
+  note    = {MDPI}
+}
+```
+
+> The final citation information will be updated after publication.
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Amir Saeed**
+
+<p>
+  <a href="https://github.com/MuhammadAmirSaeed66">
+    <img src="https://img.shields.io/badge/GitHub-MuhammadAmirSaeed66-black?logo=github">
+  </a>
+</p>
+
+---
+
+## 📜 License
+
+This repository is licensed under the MIT License.
+
+See the `LICENSE` file for details.
+
+---
+
+## ⭐ Support
+
+If you find this repository useful, please consider giving it a star ⭐
+
+---
