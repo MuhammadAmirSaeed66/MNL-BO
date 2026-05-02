@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <b>Reproducible R Implementation for Bayesian Optimization with Categorical and Mixed Variables</b>
+  <b>Reproducible R Implementation for Bayesian Optimization with Categorical and Mixed Variables Using a Multinomial Logit Surrogate</b>
 </p>
 
 <p align="center">
